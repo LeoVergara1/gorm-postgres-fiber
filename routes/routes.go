@@ -1,8 +1,9 @@
 package routes
 
 import (
+	"gorm-postgres/database"
+
 	"github.com/gofiber/fiber/v2"
-	"github.com/zeimedee/go-postgres/database"
 	"github.com/zeimedee/go-postgres/models"
 )
 
