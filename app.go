@@ -1,12 +1,12 @@
 package main
 
 import (
+	"gorm-postgres/database"
+	"gorm-postgres/routes"
 	"log"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
-	"github.com/zeimedee/go-postgres/database"
-	"github.com/zeimedee/go-postgres/routes"
 )
 
 func setUpRoutes(app *fiber.App) {
@@ -19,6 +19,7 @@ func setUpRoutes(app *fiber.App) {
 }
 
 func main() {
+	println("Hello")
 	database.ConnectDb()
 	app := fiber.New()
 
